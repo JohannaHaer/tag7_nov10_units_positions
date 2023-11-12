@@ -1,0 +1,41 @@
+/* Global Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background Styling */
+
+section {
+    background-image: url('../img/neom-lrhF4w-KKjA-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Content-Box */
+
+div {
+    position: absolute;
+    left: 50%; 
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(128, 128, 128, 0.423);
+    padding: 10px;
+    max-height: max-content;
+    width: 70%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}

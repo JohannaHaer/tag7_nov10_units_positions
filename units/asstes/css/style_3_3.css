@@ -1,0 +1,166 @@
+/* Global Styling */
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('../fonts/MavenPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'GildaDisplay';
+    src: url('../fonts/GildaDisplay-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: rgba(148, 148, 148, 1);
+    --second-color: rgba(255, 255, 255, 1);
+    --gradient-color-sheme: linear-gradient(to top right, rgba(255, 0, 255, 0.47) 25%, rgba(39, 39, 240, 0.88)50%, rgba(72, 206, 250, 1) 80%);
+}
+
+/* Header */
+
+header {
+    background-color: #333333;
+    height: 100vh;
+    position: relative;
+}
+
+/* Logo */
+
+.logo-teil_eins {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 3%;
+    top: 3%;
+    font-weight: 600;
+    font-family: 'MavenPro';
+    color: var(--first-color);
+}
+
+.logo-teil_zwei {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 4%;
+    top: 8%;
+    font-weight:  600;
+    font-family: 'MavenPro';
+    color: var(--first-color);
+}
+
+/* Color-Gradient-Box with Page-Title and Description (Color-Effect change on hover)*/
+
+.heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5%;
+    width: 25%;
+    height: 30%;
+    background-image: var(--gradient-color-sheme);
+}
+
+.heading__first-line, .heading__second-line {
+    font-family: 'GildaDisplay';
+    color: var(--second-color);
+}
+
+.heading__first-line {
+    margin-top: 10px;
+}
+
+.heading p {
+    font-family: 'MavenPro';
+    font-size: 0.5rem;
+    width: 70%;
+    color: var(--second-color);
+    text-align: center;
+    margin: 5px auto;
+    
+}
+
+.heading:hover {
+    background-image: linear-gradient(to top right, rgba(72, 206, 250, 1) 20%, rgba(39, 39, 240, 0.88) 50%, rgba(255, 0, 255, 0.47) 70%);
+    transition-delay: 0.1s;
+}
+
+/* Page-Navigation with Shadow-glow-effect on hover */
+
+nav {
+    position: absolute;
+    text-align: right;
+    right: 5%;
+    bottom: 10%;
+    list-style: none;
+    font-family: 'MavenPro';
+    font-size: 0.5rem;
+}
+
+nav li {
+    margin-bottom: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+nav li:hover {
+    text-shadow: 1px 0 2px var(--second-color);
+}
+
+/* main part with big background-title and introduction part */
+
+h1 {
+    font-family: 'MavenPro';
+    text-transform: uppercase;
+    color: rgba(148, 148, 148, 0.09);
+    font-weight: 900;
+    font-size: 6rem;
+    margin-top: 100px;
+    margin-left: 14px;
+}
+
+.introduction {
+    margin: -40px 300px 50px 20px;
+}
+
+.headline {
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 0.8rem;
+}
+
+/* Main-Sections with Images and Context-Descriptions */
+
+.content {
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    height: 30%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content h3, .content p {
+    text-align: left;
+    margin-left: 30%;
+}
+
+.content p {
+    font-size: 0.8rem;
+    margin-top: 2px;
+}

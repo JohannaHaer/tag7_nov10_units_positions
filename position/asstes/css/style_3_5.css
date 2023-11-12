@@ -1,0 +1,13 @@
+/* Global Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../img/robert-bye-tG36rvCeqng-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+}

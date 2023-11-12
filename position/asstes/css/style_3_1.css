@@ -1,0 +1,67 @@
+/* Global Styling */
+
+@font-face {
+    font-family: 'Monoton';
+    src: url('../fonts/Monoton-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #f1f1f1b5;
+    --color-2: #B0805D;
+    --background-color: #1D2025;
+}
+
+html {
+    font-family: 'Ubuntu';
+    background-color: var(--background-color);
+}
+
+header {
+    height: 10vh;
+    position: fixed;
+    border-bottom: 1px solid var(--color-1);
+    background-color: var(--background-color);
+    width: 100vw;
+    top: 0;
+}
+
+header nav {
+    text-align: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 120px;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--color-1);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header nav p {
+    font-family: 'Monoton';
+    font-size: 3rem;
+    color: var(--color-1);
+    display: inline-block;
+    margin-left: 100px;
+    text-align: left;
+}
+
+header 
