@@ -1,13 +1,170 @@
 /* Global Styling */
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
+
+/* Header Styling */
 
 header {
     background-image: url('../img/robert-bye-tG36rvCeqng-unsplash.jpg');
     background-size: cover;
+    background-position: center;
     height: 100vh;
+    width: 100%;
+    margin-top: -10px;
+}
+
+header nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+header nav p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+header nav ul {
+    position: absolute;
+    top: 8px;
+    right: 80px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;;
+    text-transform: uppercase;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+header div {
+    position: relative;
+}
+
+header div h1 {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-size: 1.2rem;
+}
+
+header div p {
+    position: absolute;
+    top: 80px;
+    left: 28px;
+    font-size: 0.8rem;
+}
+
+header div p span {
+    text-transform: uppercase;
+}
+
+/* Main Section */
+
+section h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 50px auto 20px auto;
+}
+
+/* Deviding line */
+
+section hr {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 0 auto 10px auto;
+}
+
+/* Picture Section */
+
+div {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section div img {
+    width: 200px;
+    height: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Different Hover-Effects on Images */
+
+section div:nth-of-type(1) img:nth-of-type(1):hover {
+    transform: scale(110%);
+}
+
+section div:nth-of-type(1) img:nth-of-type(2):hover {
+    transform: scale(90%);
+}
+
+section div:nth-of-type(1) img:nth-of-type(3):hover {
+    transform: rotate(15deg);
+}
+
+section div:nth-of-type(2) img:nth-of-type(1):hover {
+    filter: blur(2px);
+}
+
+section div:nth-of-type(2) img:nth-of-type(2):hover {
+    filter: grayscale(2);
+}
+
+section div:nth-of-type(2) img:nth-of-type(3):hover {
+    opacity: 0.3;
+}
+
+/* List of Tour Dates 2019 */
+
+section ul {
+    font-size: 0.6rem;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    list-style: none;
+    
+}
+
+section ul li {
+    margin-bottom: 10px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.sold-out {
+    color: rgba(255, 0, 0, 1);
+}
+
+.available {
+    color: rgba(0, 128, 0, 1);
 }
